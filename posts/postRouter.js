@@ -1,6 +1,10 @@
-const express = 'express';
+const express = require('express');
+
 
 const router = express.Router();
+
+// Import Post db
+const db = require('../data./posts/postDb.js');
 
 router.get('/', (req, res) => {
 
