@@ -5,35 +5,35 @@ const router = express.Router();
 const User = require('./userDb.js');
 
 // import user db
-const db = require('../data./users/userDb.js');
+const db = require('./userDb.js');
 
-router.post('/', (req, res) => {
-
-});
-
-router.post('/:id/posts', (req, res) => {
-
-});
-
-router.get('/', (req, res) => {
-
-});
-
-router.get('/:id', (req, res) => {
-
-});
-
-router.get('/:id/posts', (req, res) => {
-
-});
-
-router.delete('/:id', (req, res) => {
-
-});
-
-router.put('/:id', (req, res) => {
-
-});
+// router.post('/', (req, res) => {
+//
+// });
+//
+// router.post('/:id/posts', (req, res) => {
+//
+// });
+//
+// router.get('/', (req, res) => {
+//
+// });
+//
+// router.get('/:id', (req, res) => {
+//
+// });
+//
+// router.get('/:id/posts', (req, res) => {
+//
+// });
+//
+// router.delete('/:id', (req, res) => {
+//
+// });
+//
+// router.put('/:id', (req, res) => {
+//
+// });
 
 //custom middleware
 

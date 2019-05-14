@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
   res.status(200).json(req.hub);
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
     const count = await Post.remove(req.params.id);
     if (count > 0) {

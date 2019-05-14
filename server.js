@@ -4,8 +4,8 @@ const express = require('express');
 const server = express();
 
 // ROUTES
-const userRoutes = ('./users/userRouter.js');
-const postRoutes = ('./posts/postRouter.js');
+const userRoutes = require('./users/userRouter.js');
+const postRoutes = require('./posts/postRouter.js');
 
 
 //built in Middleware
