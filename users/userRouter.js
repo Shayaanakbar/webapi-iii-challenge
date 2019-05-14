@@ -2,6 +2,8 @@ const express = require('express');
 
 const router = express.Router();
 
+const User = require('./userDb.js');
+
 // import user db
 const db = require('../data./users/userDb.js');
 
