@@ -117,7 +117,7 @@ async function validateUserId(req, res, next) {
 };
 
 async function validateUser(req, res, next) {
-  
+
 };
 
 function validatePost(req, res, next) {
