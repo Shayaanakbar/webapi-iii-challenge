@@ -33,4 +33,13 @@ function logger(req, res, next) {
   next();
 };
 
+
+// GLOBAL CATCH ALL
+server.use((err, req, res, next) => {
+  res.status(500).json({
+    message: 'bad dog',
+    err
+  })
+});
+
 module.exports = server;
