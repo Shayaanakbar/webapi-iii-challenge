@@ -1,12 +1,12 @@
 const db = require('../data/dbConfig.js');
 
 module.exports = {
-  get,
-  getById,
-  getUserPosts,
+  get, // get has b een used
+  getById, // get by id has been used
+  getUserPosts, // get user posts has been used
   insert,
-  update,
-  remove,
+  update, // update has been used
+  remove, // remove has been used
 };
 
 function get() {

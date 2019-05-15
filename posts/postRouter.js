@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   try {
-    const post = await Post.find(req.query);
+    const post = await Post.insert(req.query);
     res.status(200).json(post);
   } catch (error) {
     // log error to server
