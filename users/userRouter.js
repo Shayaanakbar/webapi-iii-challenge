@@ -55,9 +55,9 @@ router.get('/:id', idBody, idUser, idPost, async (req, res) => {
 
 router.get('/:id/posts', idBody, idUser, idPost, async (req, res) => {
   try {
-    const messages = await User.getUserPosts(req.params.id);
+    const user = await User.getUserPosts(req.params.id);
 
-    res.status(200).json(messages);
+    res.status(200).json(user);
   } catch (error) {
     // log error to server
     console.log(error);
